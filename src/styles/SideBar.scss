@@ -3,6 +3,7 @@
     flex-direction: column;
     height: 100vh;
     width: 18vw;
+    font-family: 'Manrope', sans-serif;
     min-width: 180px;
     .userProfile{
         margin-top: 20%;
@@ -19,8 +20,8 @@
           }
           .sideNotification{
             position: absolute;
-            top: -5px;
-            right: 30px;
+            top: -10px;
+            right: 15px;
             width: 25px;
             height: 25px;
             background-color: #dc3434;
@@ -35,14 +36,12 @@
             div:nth-child(1){
                 font-size: 25px;
                 line-height: 35px;
-                font-family: 'poppins';
                 font-weight: 600;
                 color: #FFFFFF;
             }
             div:nth-child(2){
                 font-size: 12px;
                 line-height: 27px;
-                font-family: 'poppins';
                 font-weight: 400;
                 color: #FFFFFF;
                 opacity: 0.6;
