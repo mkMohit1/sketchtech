@@ -1,0 +1,31 @@
+.PopupContainer{
+    position: absolute;
+    background-color: white;
+    top: 40vh;
+    left: 40vw;
+    width: 350px;
+    border: 1px solid gray;
+    padding: 2px;
+    .PopupHeader{
+        display: flex;
+        flex-direction: row;
+        color: red;
+    }
+    .PopupBody{
+        text-align: center;
+        font-size: 18px;
+    }
+    .PopupFooter{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        button{
+            font-size: 20px;
+            outline: none;
+            border-color: rgba(124, 176, 255, 0.801);
+            background-color: rgba(124, 176, 255, 0.801);
+        }
+    }
+}

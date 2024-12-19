@@ -5,3 +5,6 @@
   transition: width 0.3s ease; 
     overflow-y: auto;
 }
+.main-content{
+  width: 100%;
+}

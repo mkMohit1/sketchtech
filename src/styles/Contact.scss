@@ -1,0 +1,142 @@
+.lets-talk-component {
+    background-color: #c72c48;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      background-color: #b92740;
+  
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      .follow-me {
+        font-size: 0.875rem;
+      }
+    }
+    .contactRight{
+      width: 45%;
+      height: 50%;
+      margin: 0 auto;
+      position: relative;
+      display: flex;
+      .BigCircle{
+        width: 270px;
+        height: 270px;
+        background-color: #ffd749;
+        position: absolute;
+        top: 50px;
+        right: 40%;
+        border-radius: 50%;
+        .SmallCircle{
+          width: 200px;
+          height: 200px;
+          background-color: white;
+          border-radius: 50%;
+          position: absolute;
+        }
+        .sm1{
+          top: -90px;
+          left: -58px;
+        }
+        .sm2{
+          bottom: -60px;
+          right: -90px;
+        }
+      }
+      .image1{
+        width: 350px;
+        position: absolute;
+        top: -150px;
+        left: 10px;
+      }
+      .image2{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+      }
+      .image3{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        bottom: -80px;
+        left: -90px;
+      }
+    }
+    .main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 100px;
+      
+      .content {
+        text-align: center;
+        max-width: 800px;
+        padding: 2rem;
+        width: 380px;
+        background: url("../images/ContactBg.png")  no-repeat;
+        color:#c72c48;
+        padding-bottom: 0;
+        .title {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+  
+        .statue-of-liberty {
+          margin-bottom: 2rem;
+          
+          img {
+            width: 100px;
+          }
+        }
+  
+        .form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 1rem;
+  
+          input,
+          textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: lightgray;
+            border-bottom: 1px solid lightgray;
+          }
+  
+          .submit-button {
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+            width: 100%;
+            bottom: 45px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &:hover {
+              background-color: #ff3333;
+            }
+          }
+        }
+      }
+    }
+  }

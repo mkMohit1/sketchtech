@@ -10,6 +10,10 @@ import Pen from "./images/edit.png";
 import Share from "./images/share.png";
 import backgroundImage from './images/background.jpg';
 import RightArrow from "./images/right-arrow.png";
+import ContactImg1 from "./images/contact1.png";
+import ContactImg2 from "./images/contact2.png";
+import ContactImg3 from "./images/contact3.png";
+import StatusOfLiberty from "./images/statue-of-liberty.jpg";
 
 const images = {
   google: googleImg,
@@ -23,8 +27,11 @@ const images = {
   Pen: Pen,
   Share: Share,
   RightArrow: RightArrow,
-  backgroundImage: backgroundImage
-
+  backgroundImage: backgroundImage,
+  ContactImg1: ContactImg1,
+  ContactImg2: ContactImg2,
+  ContactImg3: ContactImg3,
+  StatusOfLiberty: StatusOfLiberty,
 };
 
 export default images;

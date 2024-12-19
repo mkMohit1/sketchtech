@@ -1,0 +1,129 @@
+.taskListContainer {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f2eae5;
+    font-family: 'Manrope', sans-serif;
+    max-width: 600px;
+    margin: auto;
+  
+    h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+  
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+  
+      li {
+        list-style: none;
+        cursor: pointer;
+        font-size: 14px;
+        color: #555;
+      }
+  
+      li:hover {
+        color: #000;
+      }
+    }
+  
+    .tasks {
+      .task {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+  
+        &:last-child {
+          border-bottom: none;
+        }
+  
+        .task-title {
+          flex-grow: 1;
+          font-size: 14px;
+          color: #333;
+        }
+  
+        .status {
+          font-size: 12px;
+          padding: 2px 8px;
+          border-radius: 5px;
+          text-transform: capitalize;
+        }
+  
+        .approved {
+          background-color: #d4edda;
+          color: #155724;
+        }
+  
+        .in-review {
+          background-color: #fff3cd;
+          color: #856404;
+        }
+  
+        .on-going {
+          background-color: #d1ecf1;
+          color: #0c5460;
+        }
+  
+        /* Custom checkbox */
+        .custom-checkbox {
+          position: relative;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+  
+          input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+  
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            transition: all 0.3s;
+          }
+  
+          input:checked + .checkmark {
+            background-color: #e65f2b;
+            border-color: #e65f2b;
+          }
+  
+          .checkmark:after {
+            content: '';
+            position: absolute;
+            display: none;
+          }
+  
+          input:checked + .checkmark:after {
+            display: block;
+          }
+  
+          .checkmark:after {
+            left: 6px;
+            top: 3px;
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+  
